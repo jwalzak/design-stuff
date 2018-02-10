@@ -1,0 +1,98 @@
+body {
+  background: rgba(167, 132, 19, 0.719);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  }
+
+  .container {
+    display: grid;
+    height: 100vh;
+    width: 1440px;
+    margin: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 80px);
+  }
+
+  .profession {
+    font-size: 4.5rem;
+    font-weight: bold;
+    grid-column: 1 / 6;
+    grid-row: 3;
+  }
+
+  .sub-profession {
+    font-size: 2rem;
+    grid-column: span 4 / 5;
+    grid-row: 4;
+    justify-self: flex-end;
+  }
+
+  .first-name {
+    font-size: 2rem;
+    align-self: flex-end;
+    grid-column: 1 / 3;
+    grid-row: 6;
+  }
+
+  .last-name {
+    font-size: 4rem;
+    font-weight: bolder;
+    font-stretch: expanded;
+    grid-column: 1 / 3;
+    grid-row: 7;
+  }
+
+  .city {
+    writing-mode: tb-rl;
+    color: red;
+    transform: rotate(180deg);
+    align-self: center;
+    grid-column: 3;
+    grid-row: 7;
+  }
+
+  .date-container {
+    grid-column: -1 / -2;
+    grid-row: 1 / 4;
+  }
+
+  .day {
+    background-color: red;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 2rem;
+    grid-column: -1 / -2;
+    grid-row: 1;
+  }
+
+  .date {
+    text-align: center;
+    font-size: 5rem;
+    grid-column: -1 / -2;
+    grid-row: 2 / 3;
+  }
+
+  .month {
+    background-color: red;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    grid-column: -1 / -2;
+    grid-row: 3;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .projects {
+    border-bottom: 8px solid black;
+    text-align: center;
+    align-self: center;
+    grid-column: -1 / -2;
+
+  }

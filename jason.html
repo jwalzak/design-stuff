@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+  }
+  .letter {
+    text-align:center;
+    line-height:300px;
+    width:300px;
+    height:300px;
+    font-size:300px;
+  }
+
+  .j, .on {
+    background-color: black;
+    color: white;
+  }
+
+  .on {
+    writing-mode: vertical-rl;
+    font-size: 140px;
+    text-align:center;
+    line-height:460px;
+    height:300px;
+    overflow:hidden;
+    width:300px;
+    font-size:140px;
+  }
+
+  .a, .s {
+    background-color: red;
+    color: white;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="letter j">j</div>
+    <div class="letter a">a</div>
+    <div class="letter s">s</div>
+    <div class="letter on">on...</div>
+  </div>
+</body>
+</html>
