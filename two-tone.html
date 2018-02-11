@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two Colours</title>
+</head>
+<style>
+  .container {
+    width: 563px;
+    height: 578px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+
+  .img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+  }
+
+  .left {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 25%);
+    z-index: -1;
+  }
+
+  img {
+    filter: grayscale(100%);
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="images/banjo-kid.jpg" alt="Kid and Dog Playing Banjo" class="banjo">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+
+</html>
