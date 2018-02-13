@@ -1,89 +1,89 @@
-const dateObject = new Date();
-const day = dateObject.getDay();
-const date = dateObject.getDate();
-const month = dateObject.getMonth();
+const m_word = 'walzak'
+const m_host = 'gmail'
+const dateObject = new Date()
+const day = dateObject.getDay()
+const date = dateObject.getDate()
+const month = dateObject.getMonth()
 
-const dateArray = {
+const contentObject = {
   weekDay: [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
   ],
   month: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ]
-};
-
-const dayOfWeek = dateArray.weekDay[day];
-const monthOfYear = dateArray.month[month];
-
-function dateApplication(dayOfWeek, monthOfYear) {
-  const dayClass = document.querySelector(".day");
-  const dateClass = document.querySelector(".date");
-  const monthClass = document.querySelector(".month");
-
-  dayClass.textContent = dayOfWeek;
-  dateClass.textContent = `${date}.`;
-  monthClass.textContent = monthOfYear;
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
+  words: [
+  'PHP',
+  'JavaScript',
+  'Java',
+  'ASP.NET',
+  'WordPress',
+  'AWS',
+  'HTML',
+  'CSS',
+  'Security',
+  'React',
+  'NodeJS',
+  'npm',
+  'CSS Grid',
+  'ES6',
+  'TypeScript',
+  'Laravel',
+  'Agile',
+  'VSCode',
+  'Sublime Text',
+  'Vim',
+  'Bash',
+  'Linux',
+  'git',
+  'Github',
+  'Agile',
+  'MySQL',
+  'NoSQL',
+  'Front End / Back End',
+]
 }
 
-dateApplication(dayOfWeek, monthOfYear);
+const dayOfWeek = contentObject.weekDay[day]
+const monthOfYear = contentObject.month[month]
 
-const words = [
-  "PHP",
-  "JavaScript",
-  "Java",
-  "ASP.NET",
-  "WordPress",
-  "AWS",
-  "HTML",
-  "CSS",
-  "Security",
-  "React",
-  "NodeJS",
-  "npm",
-  "CSS Grid",
-  "ES6",
-  "TypeScript",
-  "Laravel",
-  "Vue",
-  "Agile",
-  "VSCode",
-  "Sublime Text",
-  "Vim",
-  "Bash",
-  "Linux",
-  "git",
-  "Github",
-  "Agile",
-  "MySQL", 
-  "Firebase",
-  
-];
+function dateApplication(dayOfWeek, monthOfYear) {
+  const dayClass = document.querySelector('.day')
+  const dateClass = document.querySelector('.date')
+  const monthClass = document.querySelector('.month')
 
-const container = document.querySelector(".sub-profession");
+  dayClass.textContent = dayOfWeek
+  dateClass.textContent = `${date}.`
+  monthClass.textContent = monthOfYear
+}
 
-for (var x = 0, ln = words.length; x < ln; x++) {
+dateApplication(dayOfWeek, monthOfYear)
+
+const container = document.querySelector('.sub-profession')
+
+for (var x = 0, ln = contentObject.words.length; x < ln; x++) {
   setTimeout(
     function(y) {
-      container.textContent = words[y];
+      container.textContent = contentObject.words[y]
     },
     x * 1000,
     x
-  ); // we're passing x
+  ) // we're passing x
 }

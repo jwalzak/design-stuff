@@ -17,38 +17,41 @@ body {
     font-size: 4.5rem;
     font-weight: bold;
     grid-column: 1 / 6;
-    grid-row: 3;
+    grid-row: 2;
   }
 
   .sub-profession {
     font-size: 2rem;
     grid-column: span 4 / 5;
-    grid-row: 4;
+    grid-row: 3;
     justify-self: flex-end;
   }
 
   .first-name {
-    font-size: 2rem;
+    font-size: 3rem;
     align-self: flex-end;
     grid-column: 1 / 3;
     grid-row: 6;
   }
 
   .last-name {
-    font-size: 4rem;
+    font-size: 13rem;
     font-weight: bolder;
-    font-stretch: expanded;
-    grid-column: 1 / 3;
-    grid-row: 7;
+    align-self: start;
+    justify-self: start;
+    grid-column: 1 / 6;
+    grid-row: 7 / 8;
   }
 
   .city {
+    font-size: 3rem;
     writing-mode: tb-rl;
     color: red;
     transform: rotate(180deg);
-    align-self: center;
-    grid-column: 3;
-    grid-row: 7;
+    align-self: start;
+    justify-self: start;
+    grid-column: 7;
+    grid-row: 7 / 12;
   }
 
   .date-container {
@@ -59,8 +62,9 @@ body {
   .day {
     background-color: red;
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
     font-size: 2rem;
     grid-column: -1 / -2;
     grid-row: 1;
@@ -77,6 +81,7 @@ body {
     background-color: red;
     text-align: center;
     align-self: center;
+    justify-self: center;
     font-size: 2rem;
     padding-left: 5px;
     padding-right: 5px;
@@ -85,6 +90,8 @@ body {
   }
 
   .link {
+    text-align: justify;
+    text-justify: inter-word;
     text-decoration: none;
     color: black;
   }
