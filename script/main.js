@@ -83,7 +83,7 @@ for (var x = 0, ln = contentObject.words.length; x < ln; x++) {
     function(y) {
       container.textContent = contentObject.words[y]
     },
-    x * 1000,
+    x * 800,
     x
   ) // we're passing x
 }
